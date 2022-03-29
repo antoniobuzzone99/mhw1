@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+header{
+    height: 500px;
+    background-image: url(https://www.pclineweb.it/wp-content/uploads/2017/01/Header.jpg);
+    background-size: cover;
+    background-position: center; /*centra l'immagine*/
+
+    position:relative; /*serve a far funzionare il position: absolute nell'overlay*/
+}
+@media (max-width: 500px) {
+    header {
+      height: 300px;
+    }
+}
+
+#overlay{ /*da una particolare trasparenza alla foto*/
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute; 
+    top:0;
+    bottom:0;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center; /*titolo centrale*/
+}
+
+#barra_navigazione{
+    background-color: rgba(7, 7, 7, 0.4); 
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top:0;
+    left:0;
+    right:0;
+    color:white ;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 500px) {
+    #barra_navigazione {
+      height: 45px;
+    }
+}
+#slogan{
+    margin-left: 40px;
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 9px;
+    font-family:'Amatic SC', cursive;
+}
+@media (max-width: 500px) {
+    #slogan {
+      font-size: 1em ;
+      margin-left: 20px;
+      border: 2px solid black;
+    }
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+}
+@media (max-width: 500px) {
+    #menu {
+      font-size: 0.6em;
+    }
+}
+#login a{
+    border-radius: 50px;
+    background-color: white;
+    padding: 7px;
+    text-decoration: none; /*toglie la sottolineatura nel link*/
+    color: black;
+}
+
+header h1{
+    margin-top:100px;
+    margin-bottom: 0px;
+    color:white;
+    border: 3px solid greenyellow;
+    display: inline-block;
+    border-radius: 10px;
+    width: 400px; 
+    font-size: 7em;
+    font-family:'Barlow Condensed';
+    z-index:5;
+}
+@media (max-width: 500px) {
+    header h1 {
+      font-size: 3em;
+      width: 150px;
+    }
+}
+
+header h2{
+    color: greenyellow;
+    font-size:3em;
+    font-family: 'Birthstone';
+    margin-top: 5px;
+    font-weight: normal;
+}
+@media (max-width: 500px) {
+    header h2 {
+      font-size: 1.2em;
+    }
+}
+
+/*contiene immagine e nome*/
+#flex1{ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px; 
+    margin-bottom: 60px; /*distanza da sotto*/
+    position: relative;
+}
+@media (max-width: 500px) {
+    #flex1 {
+        margin-bottom: 30px;
+    }
+}
+
+#img1{
+    height: 100px; 
+    width: 100px;
+    border-radius:20px;
+    border: 3px solid white;
+}
+@media (max-width: 500px) {
+    #img1 {
+        height: 80px; 
+        width: 80px;
+    }
+}
+
+#nome{
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+}
+@media (max-width: 500px) {
+    #nome {
+        font-size: 0.8em;
+    }
+}
+
+#credenziali{
+    color: rgb(42, 114, 207);
+    margin-top: -20px;
+}
+@media (max-width: 500px) {
+    #credenziali {
+        font-size: 0.5em;
+    }
+}
+
+#flex2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 120px;
+}
+@media (max-width: 500px) {
+    .box {
+        width: 90%;
+        margin-bottom: 70px;
+    }
+}
+
+.indice{
+    margin-right: 40px;
+    font-size: 3em;
+    color: grey;
+    padding-top: 20px;
+    font-family:'Amatic SC', cursive;
+}
+@media (max-width: 500px) {
+    .indice {
+        font-size: 1.5em;
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+}
+
+.contenuto{
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media (max-width: 500px) {
+    .contenuto {
+        border: 0px;
+    }
+}
+
+.marca{
+    font-family:'Barlow Condensed';
+    font-size: 4em;
+    margin: 0px 0px;
+    color: rgb(106, 175, 9);
+}
+@media (max-width: 500px) {
+    .marca {
+        font-size: 2em;
+    }
+}
+
+.voto{
+    margin-top: 0px;
+    color: crimson;
+    font-style: italic;
+}
+@media (max-width: 500px) {
+    .voto {
+        font-size: 0.7em;
+    }
+}
+
+.testo{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+@media (max-width: 500px) {
+    .testo{
+        font-size: 0.7em;
+    }
+}
+
+.modello{
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+@media (max-width: 500px) {
+    .modello{
+        font-size: 0.8em;
+    }
+}
+
+.sezione{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 500px) {
+    .sezione{
+        flex-direction: column;
+    }
+}
+
+.foto{
+    width: 50%;
+    height:20em;
+}
+@media (max-width: 500px) {
+    .foto{
+        width: 100%;
+        height: 12em;
+    }
+}
+
+footer{
+    height: 90px;
+    background-color: rgb(100, 100, 100);
+    color: rgb(32, 32, 32);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+@media (max-width: 500px) {
+    footer{
+        height: 50px;
+        padding-bottom: 30px;
+        font-size: 0.8em;
+    }
+}
+
+#fine{
+    color: white;
+    font-family: 'Birthstone';
+    font-size: 2em;
+}
+
+
+
+
